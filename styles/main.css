@@ -83,6 +83,7 @@ section .columns > * {
     font-size: 12rem;
     line-height: 14rem;
     font-family: 'alina-regular';
+    font-weight: normal;
 }
 
 #title #subtitle {
