@@ -10,10 +10,15 @@ body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 section {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 4em;
     color: var(--ft-color);
     background-color: var(--bg-color);
     position: relative;
@@ -21,7 +26,7 @@ section {
     font-weight: 500;
 }
 
-section::after {
+section:not(:last-of-type)::after {
     content: '';
     position: absolute;
     width: 0;
@@ -124,7 +129,7 @@ section .columns > * {
 }
 
 /**
- * Section #problem
+ * Section #mockup
  */
 #mockup {
     --bg-color: white;
@@ -133,3 +138,42 @@ section .columns > * {
     z-index: 8;
 }
 
+/**
+ * Section #stats
+ */
+#stats {
+    --bg-color: #1F2022;
+    --ft-color: #F0A500;
+    min-height: 100vh;
+    z-index: 7;
+    text-align: center;
+}
+
+#stats .columns {
+    text-align: left;
+}
+
+#stats .columns > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#stats .columns > *:first-child {
+    padding-right: 7rem;
+}
+
+#stats #speech-piechart {
+    max-width: 30vw;
+    margin: 3rem auto;
+}
+
+/**
+ * Section #form
+ */
+#form {
+    --bg-color: #F0A500;
+    --ft-color: #1F2022;
+    min-height: 100vh;
+    z-index: 6;
+}
