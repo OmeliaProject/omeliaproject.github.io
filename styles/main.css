@@ -141,7 +141,7 @@ section .columns > * {
 /**
  * Section #mockup
  */
-#mockup {
+#mockup1 {
     --bg-color: white;
     --ft-color: #1F2022;
     min-height: 100vh;
@@ -151,6 +151,51 @@ section .columns > * {
 /**
  * Section #stats
  */
+#mockup1::before {
+    content: '';
+    background-image: url(../assets/images/record-smartphone.png);
+    background-position: 85% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
+#mockup1 strong {
+    color: #CF7500;
+}
+
+#mockup2 {
+    --bg-color: white;
+    --ft-color: #1F2022;
+    min-height: 100vh;
+    z-index: 8;
+}
+
+#mockup2::before {
+    content: '';
+    background-image: url(../assets/images/stat-smartphone.png);
+    background-position: 15% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
+#mockup2 strong {
+    color: #CF7500;
+}
+
 #stats {
     --bg-color: #1F2022;
     --ft-color: #F0A500;
@@ -196,4 +241,39 @@ section .columns > * {
     --ft-color: #1F2022;
     min-height: 100vh;
     z-index: 6;
+}
+
+
+#platform {
+    --bg-color: #CF7500;
+    --ft-color: #FFBD00;
+    min-height: 100vh;
+    z-index: 7;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.line .logo {
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.middle {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    padding-top: 20px;
+    align-items: flex-end;
+}
+
+.right {
+    padding-top: 20px;
+    align-items: flex-start;
 }
