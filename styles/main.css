@@ -146,55 +146,26 @@ section .columns > * {
 /**
  * Section #mockup
  */
-#mockup1 {
+#mockups {
     --bg-color: white;
     --ft-color: #1F2022;
-    min-height: 100vh;
     z-index: 8;
 }
 
-#mockup1::before {
-    content: '';
-    background-image: url(../assets/images/record-smartphone.png);
-    background-position: 85% 50%;
-    background-repeat: no-repeat;
-    background-size: auto 80%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
+#mockups .columns {
+    align-items: center;
 }
 
-#mockup1 strong {
-    color: #CF7500;
+#mockups .image-column {
+    text-align: center;
+    padding: 2em;
 }
 
-#mockup2 {
-    --bg-color: white;
-    --ft-color: #1F2022;
-    min-height: 100vh;
-    z-index: 8;
+#mockups img {
+    max-height: 80vh;
 }
 
-#mockup2::before {
-    content: '';
-    background-image: url(../assets/images/stat-smartphone.png);
-    background-position: 15% 50%;
-    background-repeat: no-repeat;
-    background-size: auto 80%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-}
-
-#mockup2 strong {
+#mockups strong {
     color: #CF7500;
 }
 
