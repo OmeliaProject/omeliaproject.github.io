@@ -2,6 +2,12 @@ body {
     font-family: 'Roboto Slab';
     font-size: 1.4em;
     margin: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 * {
@@ -30,7 +36,6 @@ section:not(:last-of-type)::after {
     left: 50%;
     border: 50px solid transparent;
     border-color: transparent transparent var(--bg-color) var(--bg-color);
-
     transform-origin: 0 0;
     transform: rotate(-45deg);
     box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, .25);
@@ -276,4 +281,91 @@ section .columns > * {
 .right {
     padding-top: 20px;
     align-items: flex-start;
+}
+
+#form-section {
+    display: flex;
+    --bg-color: white;
+    --ft-color:#CF7500;
+    z-index: 7;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 10vw;
+}
+
+#form-section label 
+{
+    color: var(--ft-color);
+}
+
+#form-title
+{
+    color: var(--ft-color);
+    align-self: flex-start;
+    margin-top: 200px;
+    margin: 200px 0 100px 0;
+    font-size: 2vw;
+    width: 25vw;
+    height: auto;
+    padding-bottom: 10px;
+    text-align: left;
+    border-bottom: solid 2px var(--ft-color);
+}
+
+#form-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 20vw;
+    color: var(--ft-color);
+    width: 100%;
+}
+
+.rating
+{
+    margin: 15px 0px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.horizontal
+{
+    flex-direction: row;
+}
+
+.vertical
+{
+    flex-direction: column;
+}
+
+.radio-text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.radio-text label {
+    padding-left: 15px;
+}
+
+.radio-rating {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rating::before
+{
+    font-size: small;
+    content: "nop nop";
+    align-self: center;
+}
+
+.rating::after
+{
+    font-size: small;
+    content: "absolument";
+    align-self: center;
 }

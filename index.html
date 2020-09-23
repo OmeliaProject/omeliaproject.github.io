@@ -4,11 +4,12 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen" href="styles/fonts.css"/>
+    <link rel="stylesheet" media="screen" href="styles/bulma.min.css"/>
     <link rel="stylesheet" media="screen" href="styles/main.css"/>
 </head>
 <body>
+    <div class="svg-test"></div>
     <section id="title">
-        <div class="content columns">
             <div>
                 <h1>Omelia</h1>
                 <p id="subtitle">
@@ -36,43 +37,6 @@
                     le meilleur de vous-même lors de vos 
                     <strong>présentations</strong>.
                 </p>
-            </div>
-        </div>
-    </section>
-    <section id="mockup1">
-        <div class="content columns">
-            <div>
-                <h2>S'entrainer</h2>
-                <p>
-                    Utilisable <strong>n'importe où</strong>, 
-                    et surtout <strong>n'importe quand</strong>.
-                </p>
-                <p>
-                    <strong>L’enregistrement</strong> se fait avec la
-                    <strong>camera</strong> du téléphone et s’active a
-                    la <strong>détection de la personne</strong>.
-                </p>
-            </div>
-            <div>
-            </div>
-        </div>
-    </section>
-    <section id="mockup2">
-        <div class="content columns">
-            <div>
-            </div>
-            <div>
-                <h2>Analyser</h2>
-                <p>
-                    L’enregistrement est <strong>minutieusement</strong>
-                    analysé sur plusieurs aspects :
-                </p>
-                <ul>
-                    <li>Le <strong>temps</strong> de la présentation</li>
-                    <li>Le <strong>language</strong> corporel</li>
-                    <li>Les <strong>mots</strong> choisis</li>
-                    <li>La <strong>tonalité</strong> utilisée</li>
-                </ul>
             </div>
         </div>
     </section>
@@ -128,8 +92,149 @@
             </div>
         </div>
     </section>
-    <section id="form">
-        <!-- TODO: implement form with formspree.io -->
+    <section id="form-section">
+        <div id="form-title">
+                <p>Questionnaire</p>
+        </div>
+        <form id=form-content>
+            <div class="field">
+                <label class="label">Un coach vocal sur mesure qui vous aidera a rendre vos prises de paroles plus percutantes, intéressant?</label>
+                <div class="control rating horizontal">
+                    <!-- <div class="egde-rate">non</div> -->
+                    <div class="radio-rating">
+                        <label class="label">1</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">2</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">3</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">4</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">5</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">6</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">7</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">8</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">9</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">10</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <!-- <div class="egde-rate">oui</div> -->
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Omelia vous aiderai a amener vos présentations au niveau supérieur grâce a votre langage nos verbal, convaincu?</label>
+                <div class="control rating horizontal">
+                    <div class="radio-rating">
+                        <label class="label">1</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">2</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">3</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">4</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">5</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">6</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">7</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">8</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">9</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">10</label>
+                        <input type="radio" name="rating">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Etes vous prêts a changer la façon dont vous vous entraîner avec Omelia?</label>
+                <div class="control rating horizontal">
+                    <div class="radio-rating">
+                        <label class="label">1</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">2</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">3</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">4</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">5</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">6</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">7</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">8</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">9</label>
+                        <input type="radio" name="rating">
+                    </div>
+                    <div class="radio-rating">
+                        <label class="label">10</label>
+                        <input type="radio" name="rating">
+                    </div>
+                </div>
+            </div>
+        </form>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="./js/main.js"></script>
