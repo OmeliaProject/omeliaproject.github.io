@@ -56,13 +56,13 @@ section .columns > * {
     flex: 1 1 0px;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 62em) {
     section .columns {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
     section .content {
         width: 100%;
     }
@@ -199,7 +199,7 @@ section .columns > * {
     margin: 3rem auto;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62em) {
     #stats #speech-piechart {
         max-width: 70vw;
     }
@@ -245,7 +245,7 @@ section .columns > * {
     align-items: flex-start;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62em) {
     .arrow {
         display: none;
     }
