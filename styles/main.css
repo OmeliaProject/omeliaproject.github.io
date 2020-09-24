@@ -31,7 +31,7 @@ section:not(:last-of-type)::after {
     position: absolute;
     width: 0;
     height: 0;
-    margin-left: -50px;
+    margin-left: -70px;
     bottom: -100px;
     left: 50%;
     border: 50px solid transparent;
